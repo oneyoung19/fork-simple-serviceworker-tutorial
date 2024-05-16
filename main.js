@@ -25,6 +25,7 @@ navigator.serviceWorker.getRegistration().then(function(reg) {
           console.log("New ServiceWorker installed.");
           // give it a second to see if it activates immediately
           setTimeout(function() {
+            console.log("New ServiceWorker is waiting to become active. ", installing.state)
             if (installing.state == 'activated') {
               console.log("New ServiceWorker activated! Reload to load this page with the new ServiceWorker.");
             }

@@ -2,9 +2,9 @@
   "name": "simple-serviceworker-tutorial",
   "private": true,
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "serve"
   },
   "devDependencies": {
-    "http-server": "0.8.5"
+    "serve": "^14.2.3"
   }
 }
